@@ -1,6 +1,7 @@
 package com.sparta.djc.model;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 public class Employee {
     private final long employeeID;
@@ -70,8 +71,8 @@ public class Employee {
 
     public int getAge(){
         LocalDate todayDate = LocalDate.now();
-
-        return 0;
+        Period age = Period.between(dob,todayDate);
+        return age.getYears();
     }
 
     public void setNamePrefix(String namePrefix) {
@@ -106,7 +107,6 @@ public class Employee {
 
     public String toString(){
         return (employeeID + ": " + namePrefix +" "+ firstName + " " + middleInitial + " " + lastName);
-
 
     }
 }

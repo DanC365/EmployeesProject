@@ -16,16 +16,15 @@ public class EmployeeFileReader {
 
     public Map<Long,Employee> readEmployees(String documentName){
         initialiseLogging();
-//        List<Employee> employees = new ArrayList<>();
         Map<Long,Employee> employees = new HashMap<>();
 
         try (BufferedReader reader= new BufferedReader(new FileReader(documentName))) {
-            String employeeRecord=reader.readLine();
+            String employeeRecord=reader.readLine();//moves the line off the headings
             while((employeeRecord=reader.readLine())!=null){
                 Employee newEmployee = createEmployee(employeeRecord);
                 if(newEmployee!=null){
                     if(employees.putIfAbsent(newEmployee.getEmployeeID(),newEmployee)!=null){
-                        log.warn("Employee ID " + newEmployee.getEmployeeID() + " for " + newEmployee.toString()+" Already exists for " + employees.get(newEmployee.getEmployeeID()).toString());
+                        log.warn("Employee ID " + newEmployee.getEmployeeID() + " for employee " + newEmployee.toString()+" Already exists for employee " + employees.get(newEmployee.getEmployeeID()).toString());
                     }
                 }
             }
@@ -39,7 +38,6 @@ public class EmployeeFileReader {
     }
 
 
-    //log whenever it returns null
     private Employee createEmployee(String employeeDetails){
         String[] attributes = employeeDetails.split(",");
 
@@ -75,9 +73,8 @@ public class EmployeeFileReader {
         }
         char middleInitial = attributes[3].charAt(0);
 
-        //Last name
-        // TODO: 25/10/2019  make more specific
-        if(!(attributes[4].matches("^[A-Z][a-z -]+$"))){
+        //Last name - last names have a lot of variation with capitals, spaces and hyphons so Regex can't be specific
+        if(!(attributes[4].matches("^[A-Za-z -]+$"))){
             log.warn("Invalid input " + attributes[4] + " for last name in "+employeeDetails);
             return null;
         }
@@ -92,8 +89,8 @@ public class EmployeeFileReader {
         char gender = attributes[5].charAt(0);
 
         //Email
-//        if(!(attributes[6].matches("^[a-z.[-]_]+@[a-z]+([.][a-z]+|[.][a-z]+[.][a-z]+)$"))){
-        if(!(attributes[6].matches("^" + firstName.toLowerCase() + "[.]" +lastName.toLowerCase()+"@[a-z]+([.][a-z]+|[.][a-z]+[.][a-z]+)$"))){
+        if(!(attributes[6].matches("^[a-z.[-]_]+@[a-z]+([.][a-z]+|[.][a-z]+[.][a-z]+)$"))){
+//        if(!(attributes[6].matches("^" + firstName.toLowerCase() + "[.]" +lastName.toLowerCase()+"@[a-z]+([.][a-z]+|[.][a-z]+[.][a-z]+)$"))){
             log.warn("Invalid input " + attributes[6] + " for Email in "+employeeDetails);
             return null;
         }

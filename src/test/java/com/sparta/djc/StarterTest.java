@@ -9,6 +9,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.sql.JDBCType;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -22,7 +23,6 @@ import java.util.*;
 public class StarterTest
 {
     public static Map<Long,Employee> employees;
-
 
 
     @BeforeClass

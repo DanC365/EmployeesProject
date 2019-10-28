@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7852ddd7-459d-4958-a0eb-54894d6f406d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/DAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/EmployeeRecords1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/EmployeeRecords1.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/logFile" beforeDir="false" afterPath="$PROJECT_DIR$/resources/logFile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/Starter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/EmployeeFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/EmployeeFileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/djc/StarterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/djc/StarterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EmployeeRecords1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EmployeeRecords1.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/controller/Starter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/djc/controller/Starter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/Employee.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/EmployeeFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/EmployeeFileReader.class" afterDir="false" />
@@ -65,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StarterTest">
+  <component name="RunManager" selected="Application.Starter">
     <configuration name="Starter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sparta.djc.controller.Starter" />
       <module name="Employees" />
@@ -96,8 +98,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StarterTest" />
         <item itemvalue="Application.Starter" />
+        <item itemvalue="JUnit.StarterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -119,7 +121,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
