@@ -14,16 +14,17 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * Unit test for simple App.
  */
 public class StarterTest
 {
-    public static List<Employee> employees;
+    public static Map<Long,Employee> employees;
+
+
+
     @BeforeClass
     public static void setup(){
         EmployeeFileReader efr = new EmployeeFileReader();
@@ -37,56 +38,56 @@ public class StarterTest
 
     @Test
     public void testFirstEmployeeID(){
-        assertEquals(198429, employees.get(0).getEmployeeID());
+        assertEquals(198429, employees.get(198429L).getEmployeeID());
     }
 
     @Test
     public void testFirstEmployeePrefix(){
-        assertEquals("Mrs.", employees.get(0).getNamePrefix());
+        assertEquals("Mrs.", employees.get(198429L).getNamePrefix());
     }
 
     @Test
     public void testFirstEmployeeFirstName(){
-        assertEquals("Serafina", employees.get(0).getFirstName());
+        assertEquals("Serafina", employees.get(198429L).getFirstName());
     }
 
     @Test
     public void testFirstEmployeeMiddleInitial(){
-        assertEquals('I', employees.get(0).getMiddleInitial());
+        assertEquals('I', employees.get(198429L).getMiddleInitial());
     }
 
     @Test
     public void testFirstEmployeeLastName(){
-        assertEquals("Bumgarner", employees.get(0).getLastName());
+        assertEquals("Bumgarner", employees.get(198429L).getLastName());
     }
 
     @Test
     public void testFirstEmployeeGender(){
-        assertEquals('F', employees.get(0).getGender());
+        assertEquals('F', employees.get(198429L).getGender());
     }
 
     @Test
     public void testFirstEmployeeEmail(){
-        assertEquals("serafina.bumgarner@exxonmobil.com", employees.get(0).getEmail());
+        assertEquals("serafina.bumgarner@exxonmobil.com", employees.get(198429L).getEmail());
     }
 
     @Test
     public void testFirstEmployeeDOB()  {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/d/yyyy");
 
-        assertEquals(LocalDate.parse("9/21/1982",formatter), employees.get(0).getDob());
+        assertEquals(LocalDate.parse("9/21/1982",formatter), employees.get(198429L).getDob());
     }
 
     @Test
     public void testFirstEmployeeJoinDate() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/d/yyyy");
 
-        assertEquals(LocalDate.parse("2/1/2008",formatter), employees.get(0).getJoinDate());
+        assertEquals(LocalDate.parse("2/1/2008",formatter), employees.get(198429L).getJoinDate());
     }
 
     @Test
     public void testFirstEmployeeSalary(){
-        assertEquals(69294, employees.get(0).getSalary());
+        assertEquals(69294, employees.get(198429L).getSalary());
     }
 
 

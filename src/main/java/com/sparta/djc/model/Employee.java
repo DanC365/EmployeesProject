@@ -67,4 +67,46 @@ public class Employee {
     public int getSalary() {
         return salary;
     }
+
+    public int getAge(){
+        LocalDate todayDate = LocalDate.now();
+
+        return 0;
+    }
+
+    public void setNamePrefix(String namePrefix) {
+        this.namePrefix = namePrefix;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setMiddleInitial(char middleInitial) {
+        this.middleInitial = middleInitial;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setGender(char gender) {
+        this.gender = gender;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+
+
+    public String toString(){
+        return (employeeID + ": " + namePrefix +" "+ firstName + " " + middleInitial + " " + lastName);
+
+
+    }
 }

@@ -6,25 +6,27 @@ import org.apache.log4j.PropertyConfigurator;
 import java.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class EmployeeFileReader {
     private final String LOG_PROPERTIES_FILE ="resources/log4j.properties";
     private Logger log = Logger.getLogger(EmployeeFileReader.class.getName());
 
 
-    public List<Employee> readEmployees(String documentName){
+    public Map<Long,Employee> readEmployees(String documentName){
         initialiseLogging();
-        List<Employee> employees = new ArrayList<>();
-
+//        List<Employee> employees = new ArrayList<>();
+        Map<Long,Employee> employees = new HashMap<>();
 
         try (BufferedReader reader= new BufferedReader(new FileReader(documentName))) {
             String employeeRecord=reader.readLine();
             while((employeeRecord=reader.readLine())!=null){
                 Employee newEmployee = createEmployee(employeeRecord);
                 if(newEmployee!=null){
-                    employees.add(newEmployee);
+                    if(employees.putIfAbsent(newEmployee.getEmployeeID(),newEmployee)!=null){
+                        log.warn("Employee ID " + newEmployee.getEmployeeID() + " for " + newEmployee.toString()+" Already exists for " + employees.get(newEmployee.getEmployeeID()).toString());
+                    }
                 }
             }
 
@@ -49,6 +51,7 @@ public class EmployeeFileReader {
             log.warn("Invalid employee id format " + attributes[0] + " in " + employeeDetails);
             return null;
         }
+
 
 
         //Name Prefix
@@ -89,12 +92,12 @@ public class EmployeeFileReader {
         char gender = attributes[5].charAt(0);
 
         //Email
-        if(!(attributes[6].matches("^[a-z.[-]_]+@[a-z]+([.][a-z]+|[.][a-z]+[.][a-z]+)$"))){
+//        if(!(attributes[6].matches("^[a-z.[-]_]+@[a-z]+([.][a-z]+|[.][a-z]+[.][a-z]+)$"))){
+        if(!(attributes[6].matches("^" + firstName.toLowerCase() + "[.]" +lastName.toLowerCase()+"@[a-z]+([.][a-z]+|[.][a-z]+[.][a-z]+)$"))){
             log.warn("Invalid input " + attributes[6] + " for Email in "+employeeDetails);
             return null;
         }
         String email = attributes[6];
-
 
         //setting up the dates
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/d/yyyy");

@@ -1,0 +1,176 @@
+26-10-2019 11:57:18 TRACE [main] EmployeeFileReader - Logging initialised
+28-10-2019 07:34:57 TRACE [main] EmployeeFileReader - Logging initialised
+28-10-2019 09:55:24 TRACE [main] EmployeeFileReader - Logging initialised
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 945178 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 467080 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 517476 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 281376 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 173479 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 254060 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 581148 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 989007 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 961538 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 806216 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 968722 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 535207 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 401576 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 505192 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 577588 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 528467 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 741457 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 425467 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 766480 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 315817 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 724623 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 772917 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 992731 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 891653 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 469204 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 177006 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 214099 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 115718 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 437622 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 556707 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 562522 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 482012 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 443835 Already exists
+28-10-2019 09:55:24 WARN [main] EmployeeFileReader - Employee ID 195200 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 439490 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 874818 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 232476 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 695651 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 576333 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 421181 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 637227 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 816839 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 365479 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 992780 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 571027 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 947619 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 721695 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 273911 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 308771 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 449321 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 602809 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 768767 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 955733 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 272630 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 510897 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 758783 Already exists
+28-10-2019 09:55:25 WARN [main] EmployeeFileReader - Employee ID 631859 Already exists
+28-10-2019 09:58:42 TRACE [main] EmployeeFileReader - Logging initialised
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 945178 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 467080 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 517476 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 281376 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 173479 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 254060 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 581148 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 989007 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 961538 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 806216 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 968722 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 535207 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 401576 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 505192 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 577588 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 528467 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 741457 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 425467 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 766480 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 315817 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 724623 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 772917 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 992731 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 891653 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 469204 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 177006 Already exists
+28-10-2019 09:58:42 WARN [main] EmployeeFileReader - Employee ID 214099 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 115718 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 437622 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 556707 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 562522 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 482012 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 443835 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 195200 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 439490 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 874818 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 232476 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 695651 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 576333 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 421181 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 637227 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 816839 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 365479 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 992780 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 571027 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 947619 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 721695 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 273911 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 308771 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 449321 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 602809 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 768767 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 955733 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 272630 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 510897 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 758783 Already exists
+28-10-2019 09:58:43 WARN [main] EmployeeFileReader - Employee ID 631859 Already exists
+28-10-2019 10:03:35 TRACE [main] EmployeeFileReader - Logging initialised
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 945178 for 945178: Ms. Beulah J Weeks Already exists for 945178: Ms. Tanja A Ralph
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 467080 for 467080: Drs. Terrilyn A Mcmullen Already exists for 467080: Mr. Dane Y Lomeli
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 517476 for 517476: Ms. Marleen C Bell Already exists for 517476: Mrs. Twila Q Cherry
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 281376 for 281376: Hon. Charlene I Fenton Already exists for 281376: Mr. Cary R Murr
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 173479 for 173479: Ms. Marnie Z Luckey Already exists for 173479: Prof. Jefferey C Carver
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 254060 for 254060: Dr. Sylvester V Hamill Already exists for 254060: Mrs. Lanell X Dunford
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 581148 for 581148: Ms. Oneida S Straub Already exists for 581148: Mr. Anton X Donnelly
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 989007 for 989007: Mr. Carol T London Already exists for 989007: Mrs. Hettie S Barksdale
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 961538 for 961538: Mrs. Norman J Siler Already exists for 961538: Prof. Carol D Guest
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 806216 for 806216: Mrs. Gwendolyn U Bramble Already exists for 806216: Dr. Bryon O Sprague
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 968722 for 968722: Mr. Freeman H Lower Already exists for 968722: Ms. Francoise P Mcbryde
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 535207 for 535207: Ms. Myrtie J Testerman Already exists for 535207: Mrs. Tabatha C Threadgill
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 401576 for 401576: Ms. Iola U Carranza Already exists for 401576: Ms. Cythia V Rosenblatt
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 505192 for 505192: Ms. Corinna T Garfield Already exists for 505192: Ms. Simonne F Soares
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 577588 for 577588: Ms. Adam X Sorensen Already exists for 577588: Mr. Giuseppe M Lux
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 528467 for 528467: Dr. Asa K Peeples Already exists for 528467: Mrs. Ayanna Y Pinder
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 741457 for 741457: Prof. Shawn L Felts Already exists for 741457: Prof. Hank H Sauter
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 425467 for 425467: Mr. Benton Q Dotson Already exists for 425467: Mrs. Venita F Wagers
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 766480 for 766480: Mrs. Bridgette R Cannady Already exists for 766480: Hon. Lorna M Masters
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 315817 for 315817: Mrs. Suzanna M Mcfarlane Already exists for 315817: Mrs. Marti W Brewton
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 724623 for 724623: Hon. Lashonda Q Heckman Already exists for 724623: Ms. Lera G Tillett
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 772917 for 772917: Hon. Valentine V Linder Already exists for 772917: Mrs. Jalisa K Nilsson
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 992731 for 992731: Hon. Kirstin S Begley Already exists for 992731: Mr. Simon V Lantz
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 891653 for 891653: Mrs. Mindi T Higley Already exists for 891653: Hon. Marshall U Johanson
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 469204 for 469204: Mr. Rufus H Schofield Already exists for 469204: Hon. Marion O Rigby
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 177006 for 177006: Mrs. Gisele P Huie Already exists for 177006: Dr. Bud E Pardue
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 214099 for 214099: Ms. Isabelle I Escobedo Already exists for 214099: Mrs. Alina V Kates
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 115718 for 115718: Ms. Celia S Richards Already exists for 115718: Mr. Oliver V Morris
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 437622 for 437622: Dr. Marshall U Luckett Already exists for 437622: Ms. Hassie I Tye
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 556707 for 556707: Prof. Randy O Foxworth Already exists for 556707: Ms. Miss C Mccammon
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 562522 for 562522: Mr. Merlin J Tackett Already exists for 562522: Prof. Jamaal D Ellingson
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 482012 for 482012: Ms. Jonnie H Mclellan Already exists for 482012: Mrs. Jennie N Warner
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 443835 for 443835: Hon. Louis M Alton Already exists for 443835: Ms. Terresa W Forest
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 195200 for 195200: Dr. Jaime F Steck Already exists for 195200: Prof. Elvis Q Seitz
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 439490 for 439490: Mrs. Catrice Y Labrecque Already exists for 439490: Ms. Joshua H Pacheco
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 874818 for 874818: Dr. Joshua N Thai Already exists for 874818: Drs. Nannie J Claiborne
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 232476 for 232476: Hon. Nancie B Broomfield Already exists for 232476: Mrs. Aisha A Mcburney
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 695651 for 695651: Mr. Herb W Mosier Already exists for 695651: Mr. Moses B Scheller
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 576333 for 576333: Mr. Gregorio Z Bauman Already exists for 576333: Mrs. Dominica U Arsenault
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 421181 for 421181: Drs. Merri J Tillery Already exists for 421181: Mrs. Sidney X Lindstrom
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 637227 for 637227: Ms. Georgiann P Leyba Already exists for 637227: Dr. Oliver V Rockett
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 816839 for 816839: Ms. In Q Shirk Already exists for 816839: Dr. Gerry G Doody
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 365479 for 365479: Drs. Leann E Ellinger Already exists for 365479: Prof. Terence D Huss
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 992780 for 992780: Mr. Lawrence L Macomber Already exists for 992780: Mr. Edward D Stcyr
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 571027 for 571027: Ms. Maegan H Tyson Already exists for 571027: Ms. Jamee T Stamp
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 947619 for 947619: Mrs. Penny C Drumm Already exists for 947619: Ms. Barbie R Grillo
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 721695 for 721695: Mr. Robert B Harrison Already exists for 721695: Mr. Henry I Hyden
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 273911 for 273911: Ms. Eboni V Vermillion Already exists for 273911: Hon. Jamal K Fairchild
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 308771 for 308771: Mrs. Adeline X Poston Already exists for 308771: Ms. Candida U Weekley
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 449321 for 449321: Mr. Tommie X Tomblin Already exists for 449321: Mr. Mickey Y Squire
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 602809 for 602809: Ms. Juana E Perdue Already exists for 602809: Hon. Ralph G Dampier
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 768767 for 768767: Mrs. Elene X Riddick Already exists for 768767: Drs. Dorcas S Magill
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 955733 for 955733: Mr. Irwin A Grow Already exists for 955733: Mr. Marc O Mcleod
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 272630 for 272630: Ms. Ingeborg M Bolding Already exists for 272630: Ms. Shane E Bouie
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 510897 for 510897: Drs. Alene X Throckmorton Already exists for 510897: Mr. Russell E Nowell
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 758783 for 758783: Dr. Antonio E Kropp Already exists for 758783: Mr. Tommy U Lockridge
+28-10-2019 10:03:36 WARN [main] EmployeeFileReader - Employee ID 631859 for 631859: Hon. Trudi V Aiken Already exists for 631859: Ms. Evelin U Mariscal
