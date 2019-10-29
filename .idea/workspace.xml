@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7852ddd7-459d-4958-a0eb-54894d6f406d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mysql-connector-java-8.0.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sparta/djc/DatabaseWriteTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/EmployeeRecords1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/EmployeeRecords1.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/logFile" beforeDir="false" afterPath="$PROJECT_DIR$/resources/logFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/DAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/Starter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/EmployeeFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/EmployeeFileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/djc/StarterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/djc/StarterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EmployeeRecords1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EmployeeRecords1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/controller/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/djc/controller/DAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/controller/Starter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/djc/controller/Starter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/Employee.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/EmployeeFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/EmployeeFileReader.class" afterDir="false" />
@@ -44,8 +46,8 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/mysql-connector-java-8.0.17.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -81,6 +83,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DatabaseWriteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Employees" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.djc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.djc" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.djc.DatabaseWriteTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StarterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Employees" />
       <extension name="coverage">
@@ -99,6 +116,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Starter" />
+        <item itemvalue="JUnit.DatabaseWriteTest" />
         <item itemvalue="JUnit.StarterTest" />
       </list>
     </recent_temporary>

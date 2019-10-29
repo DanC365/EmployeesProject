@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.Period;
 
 public class Employee {
-    private final long employeeID;
+    private final String employeeID;
     private String namePrefix;
     private String firstName;
     private char middleInitial;
@@ -16,7 +16,7 @@ public class Employee {
     private int salary;
 
 
-    public Employee(long employeeID, String namePrefix, String firstName, char middleInitial, String lastName, char gender, String email, LocalDate dob, LocalDate joinDate, int salary) {
+    public Employee(String employeeID, String namePrefix, String firstName, char middleInitial, String lastName, char gender, String email, LocalDate dob, LocalDate joinDate, int salary) {
         this.employeeID = employeeID;
         this.namePrefix = namePrefix;
         this.firstName = firstName;
@@ -29,7 +29,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    public long getEmployeeID() {
+    public String getEmployeeID() {
         return employeeID;
     }
 

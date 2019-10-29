@@ -14,9 +14,9 @@ public class EmployeeFileReader {
     private Logger log = Logger.getLogger(EmployeeFileReader.class.getName());
 
 
-    public Map<Long,Employee> readEmployees(String documentName){
+    public Map<String, Employee> readEmployees(String documentName){
         initialiseLogging();
-        Map<Long,Employee> employees = new HashMap<>();
+        Map<String, Employee> employees = new HashMap<>();
 
         try (BufferedReader reader= new BufferedReader(new FileReader(documentName))) {
             String employeeRecord=reader.readLine();//moves the line off the headings
@@ -42,13 +42,16 @@ public class EmployeeFileReader {
         String[] attributes = employeeDetails.split(",");
 
         //employee ID
-        long employeeID=0;
-        try{
-            employeeID= Long.parseLong(attributes[0]);
-        }catch(NumberFormatException e){
+        String employeeID= attributes[0];
+        if(!(attributes[0].matches("^[0-9]+$"))){
             log.warn("Invalid employee id format " + attributes[0] + " in " + employeeDetails);
-            return null;
         }
+//        try{
+//            employeeID= Long.parseLong(attributes[0]);
+//        }catch(NumberFormatException e){
+//            log.warn("Invalid employee id format " + attributes[0] + " in " + employeeDetails);
+//            return null;
+//        }
 
 
 

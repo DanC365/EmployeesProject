@@ -5,14 +5,9 @@ import static org.junit.Assert.assertTrue;
 
 import com.sparta.djc.model.Employee;
 import com.sparta.djc.model.EmployeeFileReader;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.sql.JDBCType;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -22,7 +17,7 @@ import java.util.*;
  */
 public class StarterTest
 {
-    public static Map<Long,Employee> employees;
+    public static Map<String, Employee> employees;
 
 
     @BeforeClass
@@ -38,56 +33,56 @@ public class StarterTest
 
     @Test
     public void testFirstEmployeeID(){
-        assertEquals(198429, employees.get(198429L).getEmployeeID());
+        assertEquals("198429", employees.get("198429").getEmployeeID());
     }
 
     @Test
     public void testFirstEmployeePrefix(){
-        assertEquals("Mrs.", employees.get(198429L).getNamePrefix());
+        assertEquals("Mrs.", employees.get("198429").getNamePrefix());
     }
 
     @Test
     public void testFirstEmployeeFirstName(){
-        assertEquals("Serafina", employees.get(198429L).getFirstName());
+        assertEquals("Serafina", employees.get("198429").getFirstName());
     }
 
     @Test
     public void testFirstEmployeeMiddleInitial(){
-        assertEquals('I', employees.get(198429L).getMiddleInitial());
+        assertEquals('I', employees.get("198429").getMiddleInitial());
     }
 
     @Test
     public void testFirstEmployeeLastName(){
-        assertEquals("Bumgarner", employees.get(198429L).getLastName());
+        assertEquals("Bumgarner", employees.get("198429").getLastName());
     }
 
     @Test
     public void testFirstEmployeeGender(){
-        assertEquals('F', employees.get(198429L).getGender());
+        assertEquals('F', employees.get("198429").getGender());
     }
 
     @Test
     public void testFirstEmployeeEmail(){
-        assertEquals("serafina.bumgarner@exxonmobil.com", employees.get(198429L).getEmail());
+        assertEquals("serafina.bumgarner@exxonmobil.com", employees.get("198429").getEmail());
     }
 
     @Test
     public void testFirstEmployeeDOB()  {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/d/yyyy");
 
-        assertEquals(LocalDate.parse("9/21/1982",formatter), employees.get(198429L).getDob());
+        assertEquals(LocalDate.parse("9/21/1982",formatter), employees.get("198429").getDob());
     }
 
     @Test
     public void testFirstEmployeeJoinDate() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/d/yyyy");
 
-        assertEquals(LocalDate.parse("2/1/2008",formatter), employees.get(198429L).getJoinDate());
+        assertEquals(LocalDate.parse("2/1/2008",formatter), employees.get("198429").getJoinDate());
     }
 
     @Test
     public void testFirstEmployeeSalary(){
-        assertEquals(69294, employees.get(198429L).getSalary());
+        assertEquals(69294, employees.get("198429").getSalary());
     }
 
 
