@@ -24,6 +24,7 @@ public class StarterTest
     public static void setup(){
         EmployeeFileReader efr = new EmployeeFileReader();
         employees = efr.readEmployees("resources/EmployeeRecords.csv");
+
     }
 
 //    @Test

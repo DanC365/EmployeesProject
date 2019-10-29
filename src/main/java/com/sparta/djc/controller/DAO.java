@@ -38,14 +38,26 @@ public class DAO {
     }
 
 
-    public ResultSet employeeDatabaseQueryID(String id){
+    public String[] employeeDatabaseQueryID(String id){
         final String QUERY ="SELECT * FROM employeesproject.employee WHERE employee_id=?";
         try(Connection connection = DriverManager.getConnection(URL)){
             PreparedStatement statement = connection.prepareStatement(QUERY);
             statement.setString(1,id);
-            return statement.executeQuery();
-
-
+            ResultSet resultSet = statement.executeQuery();
+            String[] employeeRecord = new String[10];
+            if(resultSet.next()){
+                employeeRecord[0] = resultSet.getString(1);
+                employeeRecord[1] = resultSet.getString(2);
+                employeeRecord[2] = resultSet.getString(3);
+                employeeRecord[3] = resultSet.getString(4);
+                employeeRecord[4] = resultSet.getString(5);
+                employeeRecord[5] = resultSet.getString(6);
+                employeeRecord[6] = resultSet.getString(7);
+                employeeRecord[7] = resultSet.getDate(8).toString();
+                employeeRecord[8] = resultSet.getDate(9).toString();
+                employeeRecord[9] = Integer.toString(resultSet.getInt(10));
+            }
+            return employeeRecord;
         }catch(SQLException e){
             e.printStackTrace();
         }
