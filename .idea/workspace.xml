@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7852ddd7-459d-4958-a0eb-54894d6f406d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/EmployeeManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/logFile" beforeDir="false" afterPath="$PROJECT_DIR$/resources/logFile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/Starter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/EmployeeFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/EmployeeFileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/djc/DatabaseWriteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/djc/DatabaseWriteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/djc/StarterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/djc/StarterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/djc/StarterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/djc/EmployeeManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/controller/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/djc/controller/DAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/controller/Starter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/djc/controller/Starter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/EmployeeFileReader.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/logFile" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logFile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/sparta/djc/DatabaseWriteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sparta/djc/DatabaseWriteTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sparta/djc/StarterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sparta/djc/StarterTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sparta/djc/StarterTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DatabaseWriteTest">
+  <component name="RunManager" selected="Application.Starter">
     <configuration name="Starter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sparta.djc.controller.Starter" />
       <module name="Employees" />
@@ -92,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StarterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Employees" />
       <extension name="coverage">
         <pattern>
@@ -101,7 +105,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sparta.djc" />
-      <option name="MAIN_CLASS_NAME" value="com.sparta.djc.StarterTest" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.djc.EmployeeManagerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -109,9 +113,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DatabaseWriteTest" />
-        <item itemvalue="JUnit.StarterTest" />
         <item itemvalue="Application.Starter" />
+        <item itemvalue="JUnit.DatabaseWriteTest" />
+        <item itemvalue="JUnit.EmployeeManagerTest" />
       </list>
     </recent_temporary>
   </component>

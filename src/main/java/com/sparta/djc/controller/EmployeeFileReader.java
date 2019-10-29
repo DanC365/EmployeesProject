@@ -1,5 +1,6 @@
-package com.sparta.djc.model;
+package com.sparta.djc.controller;
 
+import com.sparta.djc.model.Employee;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 

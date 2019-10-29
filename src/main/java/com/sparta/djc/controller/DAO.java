@@ -1,6 +1,7 @@
 package com.sparta.djc.controller;
 
 import com.sparta.djc.model.Employee;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.Map;
@@ -8,6 +9,9 @@ import java.util.Map;
 public class DAO {
 
     private final String URL="jdbc:mysql://localhost/Sakila?user=root&password=S417pqR5!";
+    private final String LOG_PROPERTIES_FILE ="resources/log4j.properties";
+    private Logger log = Logger.getLogger(EmployeeFileReader.class.getName());
+
 
     public void addEmployeesToDatabase(Map<String, Employee> employees){
         final String QUERY ="INSERT INTO employeesproject.employee VALUES (?,?,?,?,?,?,?,?,?,?)";
@@ -24,8 +28,11 @@ public class DAO {
                 statement.setDate(8,java.sql.Date.valueOf(employee.getDob()));
                 statement.setDate(9,java.sql.Date.valueOf(employee.getJoinDate()));
                 statement.setInt(10,employee.getSalary());
-
-                statement.executeUpdate();
+                try {
+                    statement.executeUpdate();
+                }catch(SQLIntegrityConstraintViolationException e){
+                    log.warn("Primary key clash found for employee " + employee.toString() + ". Employee not added to database");
+                }
             }
 
 
@@ -64,6 +71,15 @@ public class DAO {
         return null;
     }
 
+    private void clearTable(){
+        final String QUERY = "TRUNCATE TABLE employeesproject.employee";
+        try(Connection connection = DriverManager.getConnection(URL)){
+            PreparedStatement preparedStatement = connection.prepareStatement(QUERY);
+            preparedStatement.executeUpdate();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
 
 
 }

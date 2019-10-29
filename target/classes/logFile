@@ -655,3 +655,63 @@
 29-10-2019 14:20:53 TRACE [main] EmployeeFileReader - Logging initialised
 29-10-2019 14:36:12 TRACE [main] EmployeeFileReader - Logging initialised
 29-10-2019 14:36:49 TRACE [main] EmployeeFileReader - Logging initialised
+29-10-2019 14:39:44 TRACE [main] EmployeeFileReader - Logging initialised
+29-10-2019 14:51:07 TRACE [main] EmployeeFileReader - Logging initialised
+29-10-2019 14:51:07 WARN [main] EmployeeFileReader - Employee ID 945178 for employee 945178: Ms. Beulah J Weeks Already exists for employee 945178: Ms. Tanja A Ralph
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 467080 for employee 467080: Drs. Terrilyn A Mcmullen Already exists for employee 467080: Mr. Dane Y Lomeli
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 517476 for employee 517476: Ms. Marleen C Bell Already exists for employee 517476: Mrs. Twila Q Cherry
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 281376 for employee 281376: Hon. Charlene I Fenton Already exists for employee 281376: Mr. Cary R Murr
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 173479 for employee 173479: Ms. Marnie Z Luckey Already exists for employee 173479: Prof. Jefferey C Carver
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 254060 for employee 254060: Dr. Sylvester V Hamill Already exists for employee 254060: Mrs. Lanell X Dunford
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 581148 for employee 581148: Ms. Oneida S Straub Already exists for employee 581148: Mr. Anton X Donnelly
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 989007 for employee 989007: Mr. Carol T London Already exists for employee 989007: Mrs. Hettie S Barksdale
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 961538 for employee 961538: Mrs. Norman J Siler Already exists for employee 961538: Prof. Carol D Guest
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 806216 for employee 806216: Mrs. Gwendolyn U Bramble Already exists for employee 806216: Dr. Bryon O Sprague
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 968722 for employee 968722: Mr. Freeman H Lower Already exists for employee 968722: Ms. Francoise P Mcbryde
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 535207 for employee 535207: Ms. Myrtie J Testerman Already exists for employee 535207: Mrs. Tabatha C Threadgill
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 401576 for employee 401576: Ms. Iola U Carranza Already exists for employee 401576: Ms. Cythia V Rosenblatt
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 505192 for employee 505192: Ms. Corinna T Garfield Already exists for employee 505192: Ms. Simonne F Soares
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 577588 for employee 577588: Ms. Adam X Sorensen Already exists for employee 577588: Mr. Giuseppe M Lux
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 528467 for employee 528467: Dr. Asa K Peeples Already exists for employee 528467: Mrs. Ayanna Y Pinder
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 741457 for employee 741457: Prof. Shawn L Felts Already exists for employee 741457: Prof. Hank H Sauter
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 425467 for employee 425467: Mr. Benton Q Dotson Already exists for employee 425467: Mrs. Venita F Wagers
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 766480 for employee 766480: Mrs. Bridgette R Cannady Already exists for employee 766480: Hon. Lorna M Masters
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 315817 for employee 315817: Mrs. Suzanna M Mcfarlane Already exists for employee 315817: Mrs. Marti W Brewton
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 724623 for employee 724623: Hon. Lashonda Q Heckman Already exists for employee 724623: Ms. Lera G Tillett
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 772917 for employee 772917: Hon. Valentine V Linder Already exists for employee 772917: Mrs. Jalisa K Nilsson
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 992731 for employee 992731: Hon. Kirstin S Begley Already exists for employee 992731: Mr. Simon V Lantz
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 891653 for employee 891653: Mrs. Mindi T Higley Already exists for employee 891653: Hon. Marshall U Johanson
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 469204 for employee 469204: Mr. Rufus H Schofield Already exists for employee 469204: Hon. Marion O Rigby
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 177006 for employee 177006: Mrs. Gisele P Huie Already exists for employee 177006: Dr. Bud E Pardue
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 214099 for employee 214099: Ms. Isabelle I Escobedo Already exists for employee 214099: Mrs. Alina V Kates
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 115718 for employee 115718: Ms. Celia S Richards Already exists for employee 115718: Mr. Oliver V Morris
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 437622 for employee 437622: Dr. Marshall U Luckett Already exists for employee 437622: Ms. Hassie I Tye
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 556707 for employee 556707: Prof. Randy O Foxworth Already exists for employee 556707: Ms. Miss C Mccammon
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 562522 for employee 562522: Mr. Merlin J Tackett Already exists for employee 562522: Prof. Jamaal D Ellingson
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 482012 for employee 482012: Ms. Jonnie H Mclellan Already exists for employee 482012: Mrs. Jennie N Warner
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 443835 for employee 443835: Hon. Louis M Alton Already exists for employee 443835: Ms. Terresa W Forest
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 195200 for employee 195200: Dr. Jaime F Steck Already exists for employee 195200: Prof. Elvis Q Seitz
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 439490 for employee 439490: Mrs. Catrice Y Labrecque Already exists for employee 439490: Ms. Joshua H Pacheco
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 874818 for employee 874818: Dr. Joshua N Thai Already exists for employee 874818: Drs. Nannie J Claiborne
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 232476 for employee 232476: Hon. Nancie B Broomfield Already exists for employee 232476: Mrs. Aisha A Mcburney
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 695651 for employee 695651: Mr. Herb W Mosier Already exists for employee 695651: Mr. Moses B Scheller
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 576333 for employee 576333: Mr. Gregorio Z Bauman Already exists for employee 576333: Mrs. Dominica U Arsenault
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 421181 for employee 421181: Drs. Merri J Tillery Already exists for employee 421181: Mrs. Sidney X Lindstrom
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 637227 for employee 637227: Ms. Georgiann P Leyba Already exists for employee 637227: Dr. Oliver V Rockett
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 816839 for employee 816839: Ms. In Q Shirk Already exists for employee 816839: Dr. Gerry G Doody
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 365479 for employee 365479: Drs. Leann E Ellinger Already exists for employee 365479: Prof. Terence D Huss
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 992780 for employee 992780: Mr. Lawrence L Macomber Already exists for employee 992780: Mr. Edward D Stcyr
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 571027 for employee 571027: Ms. Maegan H Tyson Already exists for employee 571027: Ms. Jamee T Stamp
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 947619 for employee 947619: Mrs. Penny C Drumm Already exists for employee 947619: Ms. Barbie R Grillo
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 721695 for employee 721695: Mr. Robert B Harrison Already exists for employee 721695: Mr. Henry I Hyden
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 273911 for employee 273911: Ms. Eboni V Vermillion Already exists for employee 273911: Hon. Jamal K Fairchild
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 308771 for employee 308771: Mrs. Adeline X Poston Already exists for employee 308771: Ms. Candida U Weekley
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 449321 for employee 449321: Mr. Tommie X Tomblin Already exists for employee 449321: Mr. Mickey Y Squire
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 602809 for employee 602809: Ms. Juana E Perdue Already exists for employee 602809: Hon. Ralph G Dampier
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 768767 for employee 768767: Mrs. Elene X Riddick Already exists for employee 768767: Drs. Dorcas S Magill
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 955733 for employee 955733: Mr. Irwin A Grow Already exists for employee 955733: Mr. Marc O Mcleod
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 272630 for employee 272630: Ms. Ingeborg M Bolding Already exists for employee 272630: Ms. Shane E Bouie
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 510897 for employee 510897: Drs. Alene X Throckmorton Already exists for employee 510897: Mr. Russell E Nowell
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 758783 for employee 758783: Dr. Antonio E Kropp Already exists for employee 758783: Mr. Tommy U Lockridge
+29-10-2019 14:51:08 WARN [main] EmployeeFileReader - Employee ID 631859 for employee 631859: Hon. Trudi V Aiken Already exists for employee 631859: Ms. Evelin U Mariscal
+29-10-2019 15:52:19 TRACE [main] EmployeeFileReader - Logging initialised

@@ -2,7 +2,7 @@ package com.sparta.djc;
 
 import com.sparta.djc.controller.DAO;
 import com.sparta.djc.model.Employee;
-import com.sparta.djc.model.EmployeeFileReader;
+import com.sparta.djc.controller.EmployeeFileReader;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -21,7 +21,7 @@ public class DatabaseWriteTest {
     @BeforeClass
     public static void setup(){
         EmployeeFileReader employeeReader = new EmployeeFileReader();
-        Map<String, Employee> employees = employeeReader.readEmployees("resources/EmployeeRecords1.csv");
+        Map<String, Employee> employees = employeeReader.readEmployees("resources/EmployeeRecords.csv");
         DAO dao = new DAO();
         //dao.addEmployeesToDatabase(employees);
         testEmployee = employees.get("784160");

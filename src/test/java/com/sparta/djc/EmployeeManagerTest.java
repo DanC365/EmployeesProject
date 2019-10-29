@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import com.sparta.djc.model.Employee;
-import com.sparta.djc.model.EmployeeFileReader;
+import com.sparta.djc.controller.EmployeeFileReader;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -15,7 +15,7 @@ import java.util.*;
 /**
  * Unit test for simple App.
  */
-public class StarterTest
+public class EmployeeManagerTest
 {
     public static Map<String, Employee> employees;
 
