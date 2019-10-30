@@ -69,9 +69,9 @@ public class Employee {
         return salary;
     }
 
-    public int getAge(){
+    public int getAge() {
         LocalDate todayDate = LocalDate.now();
-        Period age = Period.between(dob,todayDate);
+        Period age = Period.between(dob, todayDate);
         return age.getYears();
     }
 
@@ -104,9 +104,8 @@ public class Employee {
     }
 
 
-
-    public String toString(){
-        return (employeeID + ": " + namePrefix +" "+ firstName + " " + middleInitial + " " + lastName);
+    public String toString() {
+        return (employeeID + ": " + namePrefix + " " + firstName + " " + middleInitial + " " + lastName);
 
     }
 }

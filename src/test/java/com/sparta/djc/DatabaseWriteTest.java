@@ -1,12 +1,16 @@
 package com.sparta.djc;
 
-import com.sparta.djc.controller.DAO;
+import com.sparta.djc.model.DAO;
 import com.sparta.djc.model.Employee;
-import com.sparta.djc.controller.EmployeeFileReader;
+import com.sparta.djc.model.EmployeeFileReader;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Map;
@@ -20,10 +24,21 @@ public class DatabaseWriteTest {
 
     @BeforeClass
     public static void setup(){
+
+
+        final String QUERY = "TRUNCATE TABLE employeesproject.employee";
+        try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/Sakila?user=root&password=S417pqR5!")){
+            PreparedStatement preparedStatement = connection.prepareStatement(QUERY);
+            preparedStatement.executeUpdate();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+
+
         EmployeeFileReader employeeReader = new EmployeeFileReader();
         Map<String, Employee> employees = employeeReader.readEmployees("resources/EmployeeRecords.csv");
         DAO dao = new DAO();
-        //dao.addEmployeesToDatabase(employees);
+        dao.addEmployeesToDatabase(employees);
         testEmployee = employees.get("784160");
         employeeRecord = dao.employeeDatabaseQueryID(testEmployee.getEmployeeID());
     }
