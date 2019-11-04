@@ -7,10 +7,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Map;
@@ -36,10 +33,15 @@ public class DatabaseWriteTest {
 
 
         EmployeeFileReader employeeReader = new EmployeeFileReader();
-        Map<String, Employee> employees = employeeReader.readEmployees("resources/EmployeeRecords.csv");
         DAO dao = new DAO();
+        long start = System.nanoTime();
+        Map<String, Employee> employees = employeeReader.readEmployees("resources/EmployeeRecordsLarge.csv");
         dao.addEmployeesToDatabase(employees);
-        testEmployee = employees.get("784160");
+        long end = System.nanoTime();
+        System.out.println(end-start);
+        testEmployee = employees.get("40269");
+//        testEmployee = employees.get("647173");
+//        testEmployee = employees.get("260736");
         employeeRecord = dao.employeeDatabaseQueryID(testEmployee.getEmployeeID());
     }
 
@@ -128,5 +130,21 @@ public class DatabaseWriteTest {
         }
     }
 
+    @Test
+    public void databaseSizeTest(){
+        int actualSize=0;
 
+        final String QUERY = "SELECT COUNT(*) FROM employeesproject.employee";
+        try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/Sakila?user=root&password=S417pqR5!")){
+            PreparedStatement preparedStatement = connection.prepareStatement(QUERY);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while(resultSet.next()) {
+                actualSize = resultSet.getInt(1);
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        assertEquals(65499,actualSize);
+
+    }
 }

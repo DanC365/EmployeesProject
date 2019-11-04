@@ -4,20 +4,50 @@ package com.sparta.djc.model;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
+
 import java.util.Map;
 
 public class DAO {
 
     private final String URL = "jdbc:mysql://localhost/Sakila?user=root&password=S417pqR5!";
-    private final String LOG_PROPERTIES_FILE = "resources/log4j.properties";
     private Logger log = Logger.getLogger(EmployeeFileReader.class.getName());
-
+    private volatile Integer index = 0;
 
     public void addEmployeesToDatabase(Map<String, Employee> employees) {
-        final String QUERY = "INSERT INTO employeesproject.employee VALUES (?,?,?,?,?,?,?,?,?,?)";
+        index = 0;
+
+        Employee[] employeeList = employees.values().toArray(new Employee[employees.size()]);
+        Runnable databaseAddition = () -> addRecordThread(employeeList);
+        Thread[] threads = new Thread[150];
+        for (int i = 0; i < threads.length; i++) {
+            threads[i] = new Thread(databaseAddition, "Thread " + i);
+            threads[i].start();
+        }
+        for (Thread t : threads) {
+            try {
+                t.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
+
+    private void addRecordThread(Employee[] employees) {
+        int i = 0;
+        Employee employee;
+        synchronized (this) {
+            i = index;
+            index++;
+            System.out.println(Thread.currentThread().getName() + ": " + i);
+        }
+
         try (Connection connection = DriverManager.getConnection(URL)) {
+            final String QUERY = "INSERT INTO employeesproject.employee VALUES (?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement statement = connection.prepareStatement(QUERY);
-            for (Employee employee : employees.values()) {
+            while (i < employees.length) {
+                employee = employees[i];
                 statement.setString(1, employee.getEmployeeID());
                 statement.setString(2, employee.getNamePrefix());
                 statement.setString(3, employee.getFirstName());
@@ -33,14 +63,17 @@ public class DAO {
                 } catch (SQLIntegrityConstraintViolationException e) {
                     log.warn("Primary key clash found for employee " + employee.toString() + ". Employee not added to database");
                 }
-            }
+                synchronized (this) {
+                    i = index;
+                    index++;
+                    System.out.println(Thread.currentThread().getName() + ": " + i);
 
+                }
+            }
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
     }
 
 
@@ -70,15 +103,7 @@ public class DAO {
         return null;
     }
 
-    private void clearTable() {
-        final String QUERY = "TRUNCATE TABLE employeesproject.employee";
-        try (Connection connection = DriverManager.getConnection(URL)) {
-            PreparedStatement preparedStatement = connection.prepareStatement(QUERY);
-            preparedStatement.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
+
 
 
 }

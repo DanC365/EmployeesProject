@@ -3,7 +3,7 @@ package com.sparta.djc.model;
 import java.time.LocalDate;
 import java.time.Period;
 
-public class Employee {
+public class Employee implements Comparable<Employee>{
     private final String employeeID;
     private String namePrefix;
     private String firstName;
@@ -107,5 +107,10 @@ public class Employee {
     public String toString() {
         return (employeeID + ": " + namePrefix + " " + firstName + " " + middleInitial + " " + lastName);
 
+    }
+
+    @Override
+    public int compareTo(Employee toCompare) {
+        return this.getEmployeeID().compareTo(toCompare.getEmployeeID());
     }
 }

@@ -6,17 +6,21 @@ import org.apache.log4j.PropertyConfigurator;
 import java.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Stream;
 
 public class EmployeeFileReader {
     private final String LOG_PROPERTIES_FILE = "resources/log4j.properties";
     private Logger log = Logger.getLogger(EmployeeFileReader.class.getName());
     private Map<String, Employee> employeeList;
+    private List<Employee> repeats;
+    private Set<String> repeatedIDs;
+
 
     public Map<String, Employee> readEmployees(String documentName) {
         employeeList = new HashMap<>();
+        repeats = new ArrayList<>();
+        repeatedIDs = new HashSet<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(documentName))) {
             reader.readLine();
             Stream<String> records = reader.lines();
@@ -25,6 +29,15 @@ public class EmployeeFileReader {
             e.printStackTrace();
         }
 
+
+        for(String id:repeatedIDs){
+            repeats.add(employeeList.get(id));
+            employeeList.remove(id);
+        }
+        Collections.sort(repeats);
+        for(Employee repeat:repeats){
+            log.warn(repeat.toString() + " not added due to repeated employee id");
+        }
         return employeeList;
 
     }
@@ -105,19 +118,23 @@ public class EmployeeFileReader {
 
         //Salary
         int salary = 0;
-        try {
+        if(attributes[9].matches("^[0-9]+$")){
             salary = Integer.parseInt(attributes[9]);
-        } catch (NumberFormatException e) {
+
+        }else{
             log.warn("Invalid format for employee salary in " + employeeDetails);
             return;
         }
+
         addToMap(new Employee(employeeID, namePrefix, firstName, middleInitial, lastName, gender, email, dob, joinDate, salary));
     }
 
 
     private void addToMap(Employee toAdd){
         if(employeeList.putIfAbsent(toAdd.getEmployeeID(),toAdd)!=null){
-            log.warn("Employee ID " + toAdd.getEmployeeID() + " for employee " + toAdd.toString() + " already exists for employee " + employeeList.get(toAdd.getEmployeeID()).toString());
+            repeats.add(toAdd);
+            repeatedIDs.add(toAdd.getEmployeeID());
+//            log.warn("Employee ID " + toAdd.getEmployeeID() + " for employee " + toAdd.toString() + " already exists for employee " + employeeList.get(toAdd.getEmployeeID()).toString());
         }
     }
 
