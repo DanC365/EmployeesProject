@@ -134,7 +134,6 @@ public class EmployeeFileReader {
         if(employeeList.putIfAbsent(toAdd.getEmployeeID(),toAdd)!=null){
             repeats.add(toAdd);
             repeatedIDs.add(toAdd.getEmployeeID());
-//            log.warn("Employee ID " + toAdd.getEmployeeID() + " for employee " + toAdd.toString() + " already exists for employee " + employeeList.get(toAdd.getEmployeeID()).toString());
         }
     }
 

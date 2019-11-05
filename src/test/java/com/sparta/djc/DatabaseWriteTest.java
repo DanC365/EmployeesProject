@@ -1,6 +1,7 @@
 package com.sparta.djc;
 
 import com.sparta.djc.model.DAO;
+import com.sparta.djc.model.DAOSubArrays;
 import com.sparta.djc.model.Employee;
 import com.sparta.djc.model.EmployeeFileReader;
 import org.junit.BeforeClass;
@@ -33,15 +34,15 @@ public class DatabaseWriteTest {
 
 
         EmployeeFileReader employeeReader = new EmployeeFileReader();
-        DAO dao = new DAO();
+//        DAO dao = new DAO();
+        DAOSubArrays dao = new DAOSubArrays();
         long start = System.nanoTime();
         Map<String, Employee> employees = employeeReader.readEmployees("resources/EmployeeRecordsLarge.csv");
         dao.addEmployeesToDatabase(employees);
         long end = System.nanoTime();
         System.out.println(end-start);
-        testEmployee = employees.get("40269");
-//        testEmployee = employees.get("647173");
-//        testEmployee = employees.get("260736");
+        testEmployee = employees.get("40269"); //for the large csvs
+//        testEmployee = employees.get("647173"); //for the smaller csvs
         employeeRecord = dao.employeeDatabaseQueryID(testEmployee.getEmployeeID());
     }
 

@@ -5,21 +5,28 @@ import org.apache.log4j.Logger;
 
 import java.sql.*;
 
+import java.util.Arrays;
 import java.util.Map;
 
-public class DAO {
+public class DAOSubArrays {
 
     private final String URL = "jdbc:mysql://localhost/Sakila?user=root&password=S417pqR5!";
     private Logger log = Logger.getLogger(EmployeeFileReader.class.getName());
-    private volatile Integer index = 0;
 
     public void addEmployeesToDatabase(Map<String, Employee> employees) {
-        index = 0;
 
         Employee[] employeeList = employees.values().toArray(new Employee[employees.size()]);
-        Runnable databaseAddition = () -> addRecordThread(employeeList);
         Thread[] threads = new Thread[150];
+        final int count = employeeList.length;
         for (int i = 0; i < threads.length; i++) {
+            Runnable databaseAddition;
+            final int j = i;
+            if(((count*(j+1))/150)>count){
+                databaseAddition = () -> addRecordThread(Arrays.copyOfRange(employeeList,((count*(j))/150),count));
+            }else{
+                databaseAddition = () -> addRecordThread(Arrays.copyOfRange(employeeList,((count*(j))/150),((count*(j+1))/150)));
+            }
+
 
             threads[i] = new Thread(databaseAddition, "Thread " + i);
             threads[i].start();
@@ -37,18 +44,10 @@ public class DAO {
 
 
     private void addRecordThread(Employee[] employees) {
-        int i = 0;
-        Employee employee;
-        synchronized (this) {
-            i = index;
-            index++;
-        }
-
         try (Connection connection = DriverManager.getConnection(URL)) {
             final String QUERY = "INSERT INTO employeesproject.employee VALUES (?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement statement = connection.prepareStatement(QUERY);
-            while (i < employees.length) {
-                employee = employees[i];
+            for (Employee employee: employees) {
                 statement.setString(1, employee.getEmployeeID());
                 statement.setString(2, employee.getNamePrefix());
                 statement.setString(3, employee.getFirstName());
@@ -63,10 +62,6 @@ public class DAO {
                     statement.executeUpdate();
                 } catch (SQLIntegrityConstraintViolationException e) {
                     log.warn("Primary key clash found for employee " + employee.toString() + ". Employee not added to database");
-                }
-                synchronized (this) {
-                    i = index;
-                    index++;
                 }
             }
 
