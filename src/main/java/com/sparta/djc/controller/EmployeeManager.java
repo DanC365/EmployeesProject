@@ -18,7 +18,7 @@ public class EmployeeManager {
         initialiseLogging();
         EmployeeFileReader employeeFileReader = new EmployeeFileReader();
         DAO dao = new DAO();
-        Map<String, Employee> employees = employeeFileReader.readEmployees("resources/EmployeeRecords1.csv");
+        Map<String, Employee> employees = employeeFileReader.readEmployees("resources/EmployeeRecordsLarge.csv");
         dao.addEmployeesToDatabase(employees);
     }
 

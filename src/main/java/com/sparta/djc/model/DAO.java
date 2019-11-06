@@ -4,7 +4,6 @@ package com.sparta.djc.model;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
-
 import java.util.Map;
 
 public class DAO {
@@ -17,8 +16,10 @@ public class DAO {
         index = 0;
 
         Employee[] employeeList = employees.values().toArray(new Employee[employees.size()]);
+
         Runnable databaseAddition = () -> addRecordThread(employeeList);
         Thread[] threads = new Thread[150];
+
         for (int i = 0; i < threads.length; i++) {
 
             threads[i] = new Thread(databaseAddition, "Thread " + i);
@@ -31,20 +32,20 @@ public class DAO {
                 e.printStackTrace();
             }
         }
-
-
     }
 
 
     private void addRecordThread(Employee[] employees) {
-        int i = 0;
+        //sets up the variables for the loop
+        int i;
         Employee employee;
-        synchronized (this) {
-            i = index;
-            index++;
-        }
+
 
         try (Connection connection = DriverManager.getConnection(URL)) {
+            synchronized (this) {
+                i = index;
+                index++;
+            }
             final String QUERY = "INSERT INTO employeesproject.employee VALUES (?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement statement = connection.prepareStatement(QUERY);
             while (i < employees.length) {

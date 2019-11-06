@@ -8,6 +8,7 @@ import java.sql.*;
 import java.util.Arrays;
 import java.util.Map;
 
+//this class was used to practise another method of using multiple threads
 public class DAOSubArrays {
 
     private final String URL = "jdbc:mysql://localhost/Sakila?user=root&password=S417pqR5!";
@@ -16,15 +17,16 @@ public class DAOSubArrays {
     public void addEmployeesToDatabase(Map<String, Employee> employees) {
 
         Employee[] employeeList = employees.values().toArray(new Employee[employees.size()]);
-        Thread[] threads = new Thread[150];
+        Thread[] threads = new Thread[100];
         final int count = employeeList.length;
+        final int threadCount = threads.length;
         for (int i = 0; i < threads.length; i++) {
             Runnable databaseAddition;
             final int j = i;
-            if(((count*(j+1))/150)>count){
-                databaseAddition = () -> addRecordThread(Arrays.copyOfRange(employeeList,((count*(j))/150),count));
+            if((count*(j+1))/threadCount>count){
+                databaseAddition = () -> addRecordThread(Arrays.copyOfRange(employeeList,((count*(j))/threadCount),count));
             }else{
-                databaseAddition = () -> addRecordThread(Arrays.copyOfRange(employeeList,((count*(j))/150),((count*(j+1))/150)));
+                databaseAddition = () -> addRecordThread(Arrays.copyOfRange(employeeList,((count*(j))/threadCount),(count*(j+1))/threadCount));
             }
 
 

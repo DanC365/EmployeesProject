@@ -1,7 +1,6 @@
 package com.sparta.djc.model;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 
 import java.io.*;
 import java.time.LocalDate;
@@ -81,7 +80,6 @@ public class EmployeeFileReader {
         String lastName = attributes[4];
 
         //Gender
-        // TODO: 31/10/2019 make enum
         if (!(attributes[5].matches("^[MF]$"))) {
             log.warn("Invalid input " + attributes[5] + " for Gender in " + employeeDetails);
             return;
@@ -90,7 +88,6 @@ public class EmployeeFileReader {
 
         //Email
         if (!(attributes[6].matches("^[a-z.[-]_]+@[a-z]+([.][a-z]+|[.][a-z]+[.][a-z]+)$"))) {
-//        if(!(attributes[6].matches("^" + firstName.toLowerCase() + "[.]" +lastName.toLowerCase()+"@[a-z]+([.][a-z]+|[.][a-z]+[.][a-z]+)$"))){
             log.warn("Invalid input " + attributes[6] + " for Email in " + employeeDetails);
             return;
         }

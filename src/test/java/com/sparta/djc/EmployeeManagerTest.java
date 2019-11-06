@@ -12,9 +12,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-/**
- * Unit test for simple App.
- */
 public class EmployeeManagerTest {
     public static Map<String, Employee> employees;
 
@@ -26,10 +23,7 @@ public class EmployeeManagerTest {
 
     }
 
-//    @Test
-//    public void testRecordsRead(){
-//        assertEquals(2,employees.size());
-//    }
+
 
     @Test
     public void testFirstEmployeeID() {

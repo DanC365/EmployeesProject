@@ -37,12 +37,12 @@ public class DatabaseWriteTest {
 //        DAO dao = new DAO();
         DAOSubArrays dao = new DAOSubArrays();
         long start = System.nanoTime();
-        Map<String, Employee> employees = employeeReader.readEmployees("resources/EmployeeRecordsLarge.csv");
+        Map<String, Employee> employees = employeeReader.readEmployees("resources/EmployeeRecords.csv");
         dao.addEmployeesToDatabase(employees);
         long end = System.nanoTime();
-        System.out.println(end-start);
-        testEmployee = employees.get("40269"); //for the large csvs
-//        testEmployee = employees.get("647173"); //for the smaller csvs
+        System.out.println("Time taken: " + (end-start) + " nano-Seconds");
+//        testEmployee = employees.get("40269"); //for the large csvs
+        testEmployee = employees.get("647173"); //for the smaller csvs
         employeeRecord = dao.employeeDatabaseQueryID(testEmployee.getEmployeeID());
     }
 
@@ -131,7 +131,7 @@ public class DatabaseWriteTest {
         }
     }
 
-    @Test
+    @Test //for large file only
     public void databaseSizeTest(){
         int actualSize=0;
 
