@@ -1,9 +1,9 @@
 package com.sparta.djc;
 
-import com.sparta.djc.model.DAO;
-import com.sparta.djc.model.DAOSubArrays;
+import com.sparta.djc.model.dataAccessObjects.DAO;
 import com.sparta.djc.model.Employee;
 import com.sparta.djc.model.EmployeeFileReader;
+import com.sparta.djc.model.dataAccessObjects.DAOSubArrays;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -34,15 +34,15 @@ public class DatabaseWriteTest {
 
 
         EmployeeFileReader employeeReader = new EmployeeFileReader();
-//        DAO dao = new DAO();
-        DAOSubArrays dao = new DAOSubArrays();
+        DAO dao = new DAO();
+//        DAOSubArrays dao = new DAOSubArrays();
+        Map<String, Employee> employees = employeeReader.readEmployees("resources/EmployeeRecordsLarge.csv");
         long start = System.nanoTime();
-        Map<String, Employee> employees = employeeReader.readEmployees("resources/EmployeeRecords.csv");
         dao.addEmployeesToDatabase(employees);
         long end = System.nanoTime();
-        System.out.println("Time taken: " + (end-start) + " nano-Seconds");
-//        testEmployee = employees.get("40269"); //for the large csvs
-        testEmployee = employees.get("647173"); //for the smaller csvs
+        System.out.println("Time taken: " + (end-start)/1000000000.0 + " Seconds");
+        testEmployee = employees.get("40269"); //for the large csvs
+//        testEmployee = employees.get("647173"); //for the smaller csvs
         employeeRecord = dao.employeeDatabaseQueryID(testEmployee.getEmployeeID());
     }
 

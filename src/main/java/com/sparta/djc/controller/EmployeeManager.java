@@ -1,6 +1,6 @@
 package com.sparta.djc.controller;
 
-import com.sparta.djc.model.DAO;
+import com.sparta.djc.model.dataAccessObjects.DAO;
 import com.sparta.djc.model.Employee;
 import com.sparta.djc.model.EmployeeFileReader;
 import org.apache.log4j.Logger;

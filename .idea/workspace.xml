@@ -5,15 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/logFile" beforeDir="false" afterPath="$PROJECT_DIR$/resources/logFile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/EmployeeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/controller/EmployeeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/DAOSubArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/DAOSubArrays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/EmployeeFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/EmployeeFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/dataAccessObjects/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/DAOSubArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/djc/model/dataAccessObjects/DAOSubArrays.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/djc/DatabaseWriteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/djc/DatabaseWriteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/djc/EmployeeManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/djc/EmployeeManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/controller/EmployeeManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/djc/controller/EmployeeManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/DAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/DAOSubArrays.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/DAOSubArrays.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/EmployeeFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/EmployeeFileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/DAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/djc/model/DAOSubArrays.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/logFile" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logFile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/sparta/djc/DatabaseWriteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sparta/djc/DatabaseWriteTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/sparta/djc/EmployeeManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sparta/djc/EmployeeManagerTest.class" afterDir="false" />
@@ -74,7 +71,7 @@
       <module name="Employees" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sparta.djc.model.*" />
+          <option name="PATTERN" value="com.sparta.djc.model.dataAccessObjects.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,5 +142,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Employees$DatabaseWriteTest.ic" NAME="DatabaseWriteTest Coverage Results" MODIFIED="1573656287197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.sparta.djc.*</FILTER>
+    </SUITE>
   </component>
 </project>
